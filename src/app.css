@@ -1,0 +1,56 @@
+[data-theme='light'],
+:root:not([data-theme='dark']) {
+  --secondary: #fdd835;
+  --secondary-hover: #fbc02d;
+  --secondary-focus: rgba(253, 216, 53, 0.125);
+  --secondary-inverse: rgba(0, 0, 0, 0.75);
+}
+
+/* Yellow Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --secondary: #fdd835;
+    --secondary-hover: #ffeb3b;
+    --secondary-focus: rgba(253, 216, 53, 0.25);
+    --secondary-inverse: rgba(0, 0, 0, 0.75);
+  }
+}
+
+/* Yellow Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme='dark'] {
+  --secondary: #fdd835;
+  --secondary-hover: #ffeb3b;
+  --secondary-focus: rgba(253, 216, 53, 0.25);
+  --secondary-inverse: rgba(0, 0, 0, 0.75);
+}
+
+/* Yellow (Common styles) */
+:root {
+  --form-element-active-border-color: var(--secondary);
+  --form-element-focus-color: var(--secondary-focus);
+  --switch-color: var(--secondary-inverse);
+  --switch-checked-background-color: var(--secondary);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main';
+  grid-template-rows: 70px 1fr;
+}
+
+header {
+  grid-template-area: header;
+}
+
+main {
+  grid-template-area: main;
+}
