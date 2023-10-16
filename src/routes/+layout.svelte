@@ -18,7 +18,7 @@
 
     <ul>
       <li>
-        <a href="/">Github</a>
+        <a href="https://github.com/edydeleon/meeting-bingo">Github</a>
       </li>
     </ul>
   </nav>
