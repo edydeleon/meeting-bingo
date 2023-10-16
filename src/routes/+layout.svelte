@@ -1,6 +1,7 @@
 <script lang="ts">
   import '@picocss/pico';
   import '../app.css';
+  export const prerender = true;
 </script>
 
 <svelte:head>
