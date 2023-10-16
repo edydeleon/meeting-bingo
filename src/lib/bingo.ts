@@ -37,7 +37,7 @@ export const bingoSquares = [
   `"Sorry, I was muted"`,
   `"I think you're on mute"`,
   `"Can _____ stay after the meeting to discuss _____?"`,
-  `"Is _____ in the metting?"`,
+  `"Is _____ in the meeting?"`,
   `"We can't hear you"`,
   `"Can everyone see my screen?"`,
   `"I'll have to get back to you on that"`,
