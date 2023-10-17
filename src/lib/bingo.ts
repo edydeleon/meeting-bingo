@@ -1,6 +1,6 @@
 export const bingoSquares = [
   'Someone coughs',
-  'Someone Sneezes',
+  'Someone sneezes',
   'Someone exits and rejoins',
   'Someone has mic issues',
   'Someone swears',
@@ -48,6 +48,9 @@ export const bingoSquares = [
   `"Can we wrap this up?"`,
   `"Are you presenting? I can't see your screen"`,
   `"Sorry, what was the question?"`,
+  `"Hey, quick question"`,
+  `"Good morning everyone"`,
+  `"Good afternoon everyone"`,
 ];
 
 export const getWinConditions = (size: number) => {
