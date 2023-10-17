@@ -30,6 +30,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@picocss/pico": "^1.5.10"
+    "@picocss/pico": "^1.5.10",
+    "svelte-persisted-store": "^0.7.0"
   }
 }
