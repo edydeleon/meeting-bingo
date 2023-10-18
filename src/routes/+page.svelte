@@ -43,6 +43,8 @@
     const set = new Set(selected);
     if (winConditions.some((condition) => condition.every((index) => set.has(index)))) {
       state = 'won';
+      updateBingoBoard([]);
+      updateSelected([]);
     }
   }
 
