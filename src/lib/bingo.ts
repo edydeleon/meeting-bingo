@@ -51,6 +51,10 @@ export const bingoSquares = [
   `"Hey, quick question"`,
   `"Good morning everyone"`,
   `"Good afternoon everyone"`,
+  `"Alright, let's get started"`,
+  `"Still waiting on some folks to join"`,
+  `"Is _____ on PTO?"`,
+  `"Any blockers?"`,
 ];
 
 export const getWinConditions = (size: number) => {
