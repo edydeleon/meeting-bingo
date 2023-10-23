@@ -10,7 +10,7 @@
 <header class="ms-menu">
   <div class="container">
     <div class="ms-menu-logo">
-      <a href="/"><strong>Meeting Bingo</strong></a>
+      <a href="/meeting-bingo"><strong>Meeting Bingo</strong></a>
     </div>
     <nav class="ms-menu-link">
       <ul>
