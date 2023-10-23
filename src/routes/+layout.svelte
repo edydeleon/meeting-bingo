@@ -15,7 +15,9 @@
     <nav class="ms-menu-link">
       <ul>
         <li>
-          <a href="https://github.com/edydeleon/meeting-bingo" target="_blank">Github</a>
+          <a href="https://github.com/edydeleon/meeting-bingo" target="_blank"
+            >Github <ion-icon style="font-size: 14px;" name="open-outline" /></a
+          >
         </li>
       </ul>
     </nav>
