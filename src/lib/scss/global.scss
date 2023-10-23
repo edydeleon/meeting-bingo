@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'minstyle.io';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'content';
+  grid-template-rows: auto 1fr;
+}

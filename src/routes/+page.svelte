@@ -71,11 +71,11 @@
       <h1>Meeting Bingo</h1>
       <div class="grid" style="min-width: 5rem;">
         {#if $bingoStore.board.length > 0}
-          <button class="secondary outline" on:click={() => continueLastGame()}
+          <button class="ms-btn ms-large ms-secondary" on:click={() => continueLastGame()}
             >Continue Last Game</button
           >
         {/if}
-        <button class="secondary" on:click={() => start()}>Start</button>
+        <button class="ms-btn ms-large ms-primary" on:click={() => start()}>Start</button>
       </div>
     </div>
   </div>
@@ -92,9 +92,8 @@
     {#each board as square, squareIndex}
       {@const isSelected = squareIndex === 12 || selected.includes(squareIndex)}
       <button
-        class="square"
-        class:secondary={!isSelected}
-        class:primary={isSelected}
+        class="ms-btn square"
+        class:ms-secondary={isSelected}
         on:click={() => selectSquare(squareIndex)}
       >
         {square}
@@ -107,7 +106,7 @@
   <div class="center">
     <div>
       <h1>You Win!</h1>
-      <button class="secondary" on:click={() => start()}>Play again</button>
+      <button class="ms-btn ms-large ms-secondary" on:click={() => start()}>Play again</button>
     </div>
   </div>
 {/if}
@@ -136,6 +135,10 @@
 
     & .square {
       margin: 0;
+    }
+
+    & .square:not(.ms-secondary):hover {
+      background-color: rgba(var(--secondary-bg-color), 0.5);
     }
   }
 </style>
