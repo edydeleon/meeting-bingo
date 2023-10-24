@@ -32,5 +32,10 @@
   "type": "module",
   "dependencies": {
     "svelte-persisted-store": "^0.7.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "undici@<5.26.2": ">=5.26.2"
+    }
   }
 }
